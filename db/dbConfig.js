@@ -11,12 +11,12 @@ const mysql2 = require("mysql2");
 
 // // production
 const dbConnection = mysql2.createPool({
-	host: "db4free.net",
+	// host: "db4free.net",
     // host: "191.96.1.171",
     host:process.env.HOST,
 	user: process.env.USER,
 	database: process.env.DB,
-	password: process.env.PASSWORD,
+	password: process.env.PASSWORD
 });
 
 // let users = `CREATE TABLE if not exists users(
